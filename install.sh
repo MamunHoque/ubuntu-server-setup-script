@@ -220,6 +220,7 @@ groups jenkins
 
 # Install MySQL
 # apt-get install -y mysql-server
+
 # Install MariaDB 10
 apt-get install -y mariadb-server mariadb-client
 
