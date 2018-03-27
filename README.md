@@ -45,6 +45,6 @@ sudo systemctl status nginx
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
-Special thanks to <a href="https://github.com/behestee/awssh/" target="_blank">Behestee</a> bhaiya.
+Special thanks to [Behestee](https://github.com/behestee/awssh/) bhaiya.
 
 
