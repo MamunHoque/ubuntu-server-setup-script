@@ -1,8 +1,8 @@
-# Prepare for Server Setup
+# Prepare for Ubuntu Server Setup
 ```shell
 cd
-git clone https://github.com/FierceBengalTiger/server-setup-script.git
-cd server-setup-script
+git clone https://github.com/FierceBengalTiger/ubuntu-server-setup-script.git
+cd ubuntu-server-setup-script
 chmod +x install.sh
 sudo ./install.sh
 ```
