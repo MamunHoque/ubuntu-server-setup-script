@@ -2,9 +2,9 @@
 
 export DEBIAN_FRONTEND=noninteractive
 
-# Update Package List, Update System Packages, Remove those dependencies that were installed with applications and that are no longer used by anything else on the system.
+# Update Package List
 
-apt-get -y update && apt-get -y upgrade && apt-get -y autoremove && apt-get -y autoclean
+apt-get -y update
 
 # Install Some PPAs
 
@@ -241,14 +241,6 @@ systemctl daemon-reload
 systemctl enable supervisor.service
 systemctl start supervisor
 
-# One last upgrade check
-
-apt-get -y upgrade
-
-# Clean Up
-
-apt-get -y autoremove
-apt-get -y autoclean
 chown -R jenkins:www-data /var/www
 
 # Enable Swap Memory
@@ -259,4 +251,4 @@ chown -R jenkins:www-data /var/www
 
 apt-get -y update && apt-get -y upgrade && apt-get -y autoremove && apt-get -y autoclean
 
-echo "Thanks from FierceBengalTiger and Finished Server Setup...."
+echo "Finished server setup for your Ubuntu machine and Thanks from FierceBengalTiger..."
