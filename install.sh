@@ -219,13 +219,15 @@ id jenkins
 groups jenkins
 
 # Install MySQL
-sudo apt-get install -y mysql-server
+# apt-get install -y mysql-server
+# Install MariaDB 10
+apt-get install -y mariadb-server mariadb-client
 
 # If it’s not running, start it with this command:
-sudo systemctl start mysql
+systemctl start mysql
 
 #To enable MySQL to automatically start when Ubuntu is rebooted:
-sudo systemctl enable mysql
+systemctl enable mysql
 
 # Now run the post installation security script.
 mysql_secure_installation
