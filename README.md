@@ -40,6 +40,20 @@ sudo systemctl restart nginx
 ```shell
 sudo systemctl status nginx 
 ```
+# MariaDB Configuration
+```shell
+mysql -u root -p
+```
+
+```shell
+CREATE DATABASE example_db;
+CREATE USER 'example_dbuser'@'localhost' IDENTIFIED BY 'yourpassword';
+GRANT ALL PRIVILEGES ON example_db.* TO 'example_dbuser'@'localhost' IDENTIFIED BY 'yourpassword' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+EXIT;
+```
+
+- > Change `example_db`, `example_dbuser` and `yourpassword` as per yours.
 
 # Get First Password for Jenkins and Configure for Project
 ```shell
