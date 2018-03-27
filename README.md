@@ -1,6 +1,6 @@
 # Prepare for Server Setup
 ```shell
-cd ~
+cd
 git clone https://github.com/FierceBengalTiger/server-setup-script.git
 cd server-setup-script
 chmod +x install.sh
@@ -19,7 +19,7 @@ sudo ln -s /etc/nginx/sites-available/example.com.conf /etc/nginx/sites-enabled/
 sudo vim /etc/nginx/sites-available/example.com.conf
 ```
 
-# Add conf for your Domain
+# Add conf with SSL for your Domain
 ```shell
 sudo cp /server-setup-script/sample_ssl_conf /etc/nginx/sites-available/example.com.conf
 sudo ln -s /etc/nginx/sites-available/example.com.conf /etc/nginx/sites-enabled/example.com.conf
@@ -45,6 +45,6 @@ sudo systemctl status nginx
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
-Special Thanks to [Behestee](https://github.com/behestee/awssh/).
+Special Thanks to [Behestee](https://github.com/behestee/awssh/){:target="_blank"} bhaiya.
 
 
