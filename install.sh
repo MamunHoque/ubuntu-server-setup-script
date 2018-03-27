@@ -13,8 +13,6 @@ apt-get install -y software-properties-common curl
 apt-add-repository ppa:nginx/stable -y
 apt-add-repository ppa:ondrej/php -y
 
-curl --silent --location https://deb.nodesource.com/setup_8.x | bash -
-
 # Update Package Lists
 
 apt-get -y update
@@ -53,7 +51,6 @@ php7.0-imap php7.0-mysql php7.0-mbstring \
 php7.0-xml php7.0-zip php7.0-bcmath php7.0-soap \
 php7.0-intl php7.0-readline
 
-
 update-alternatives --set php /usr/bin/php7.2
 
 # Install Composer
@@ -77,7 +74,6 @@ sudo sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php/7.0/cli/p
 sudo sed -i "s/display_errors = .*/display_errors = On/" /etc/php/7.0/cli/php.ini
 sudo sed -i "s/memory_limit = .*/memory_limit = 512M/" /etc/php/7.0/cli/php.ini
 sudo sed -i "s/;date.timezone.*/date.timezone = UTC/" /etc/php/7.0/cli/php.ini
-
 
 # Install Nginx & PHP-FPM
 
