@@ -26,6 +26,7 @@ sudo ln -s /etc/nginx/sites-available/example.com.conf /etc/nginx/sites-enabled/
 sudo vim /etc/nginx/sites-available/example.com.conf
 ```
 
+- > Change `example.com.conf` as per yours.
 - > Find `# Modify - ....` on conf file and change as per yours.
 
 # Restart Nginx server
